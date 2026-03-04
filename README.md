@@ -54,13 +54,14 @@ deactivate
 - Used deterministic processing to keep the run reproducible.
 
 ### 2. Feature Selection
-A preliminary gain-based importance pass identified weak/noisy features.
+A preliminary XGBoost model is used to compute normalized mean absolute SHAP
+importance for each feature.
 
-Dropped 7 low-importance features:
-- `F20`, `F40`, `F45`, `F11`, `F44`, `F43`, `F41`
+Features with normalized SHAP importance below `0.010` are treated as weak and
+dropped.
 
-Final feature count:
-- `47 -> 40`
+The notebook prints the dropped-feature list and resulting feature count for the
+current run.
 
 ### 3. Train/Test Alignment
 - Preserved `ID` from `TEST.csv` for submission output.

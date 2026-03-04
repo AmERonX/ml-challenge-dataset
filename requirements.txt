@@ -6,4 +6,5 @@ matplotlib
 matplotlib-inline
 ipykernel
 optuna
+shap
 torch
