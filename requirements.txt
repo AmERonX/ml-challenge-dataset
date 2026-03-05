@@ -1,10 +1,9 @@
 xgboost
+lightgbm
+catboost
 scikit-learn
+scipy
 pandas
 numpy
 matplotlib
-matplotlib-inline
 ipykernel
-optuna
-shap
-torch

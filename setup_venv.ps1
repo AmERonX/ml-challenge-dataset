@@ -43,4 +43,4 @@ Invoke-Step "Registering Jupyter kernel for this virtual environment" {
 Write-Host ""
 Write-Host "Setup complete."
 Write-Host "Use this command to generate predictions:"
-Write-Host ".\.venv\Scripts\python.exe .\predict.py --model trained_model.json --test TEST.csv --output FINAL.csv"
+Write-Host ".\.venv\Scripts\python.exe .\model\predict.py --config .\model\ensemble_config.json --test .\dataset\TEST.csv --output .\FINAL.csv"

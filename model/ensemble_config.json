@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "name": "XGBoost",
+      "file": "model/trained_model_xgboost.json",
+      "weight": 0.003109
+    },
+    {
+      "name": "LightGBM",
+      "file": "model/trained_model_lgboost.json",
+      "weight": 0.767704
+    },
+    {
+      "name": "CatBoost",
+      "file": "model/trained_model_catboost.json",
+      "weight": 0.229187
+    }
+  ],
+  "threshold": 0.19353,
+  "ensemble_oof_f1": 0.988774,
+  "ensemble_oof_auc": 0.999414
+}
